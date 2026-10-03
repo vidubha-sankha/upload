@@ -2,10 +2,10 @@
   "personal": {
     "name": "Vidubha",
     "lastName": "Sankha",
-    "title": "Data Analyst",
-    "tagline": "Unlocking Value from Complex Data",
+    "title": "Software Engineering Undergraduate",
+    "tagline": "Full-Stack Development & AI Solutions",
     "email": "mathugamagevidubasanka@gmail.com",
-    "location": "San Francisco, CA (Open to Remote)",
+    "location": "Alawwa, Sri Lanka",
     "photo": "/assets/vidubha_sankha.jpg",
     "cvUrl": "/assets/vidubha_sankha_cv.pdf",
     "social": {
@@ -16,50 +16,46 @@
   },
   "about": {
     "paragraphs": [
-      "Hi, I'm <strong>Vidubha Sankha</strong> — a fresh data analyst and BICT (Honours) graduate from the University of Vavuniya, passionate about turning raw data into clear, actionable insights.",
-      "I work with SQL, Python, Excel, and Tableau/Power BI to explore, clean, and visualize data, and I bring a solid foundation in statistics to make sure my findings are grounded in evidence, not just patterns."
+      "Hi, I'm <strong>Vidubha Sankha</strong> — a Software Engineering undergraduate at the University of Vavuniya, Sri Lanka. I have hands-on experience in full-stack development, database management, and AI-based applications.",
+      "I am skilled in React.js, JavaScript, PHP, MySQL, and REST APIs, with experience developing real-world web projects and intelligent solutions. I am seeking a software engineering opportunity to apply my skills and grow as a professional developer."
     ],
     "stats": [
-      { "value": "4+", "label": "Years Analysis" },
-      { "value": "50+", "label": "Pipelines Built" },
-      { "value": "12+", "label": "BI Dashboards" },
-      { "value": "95%", "label": "Forecast Accuracy" }
+      { "value": "3+", "label": "Featured Projects" },
+      { "value": "10+", "label": "Technologies Mastered" },
+      { "value": "2023", "label": "Started Degree" }
     ]
   },
   "projectFilters": [
     { "value": "all", "label": "All Projects" },
-    { "value": "sql", "label": "SQL" },
-    { "value": "python", "label": "Python" },
-    { "value": "tableau", "label": "Tableau" },
-    { "value": "power-bi", "label": "Power BI" },
-    { "value": "excel", "label": "Excel" }
+    { "value": "fullstack", "label": "Full-Stack Web" },
+    { "value": "ai-ml", "label": "AI & Machine Learning" }
   ],
   "projects": [
     {
       "id": 1,
-      "category": "python",
-      "index": "Project 01 / Computer Vision & Deep Learning",
-      "title": "AI & Machine Learning Powered Road Damage Detection System for Sri Lanka",
-      "techStack": ["Python", "YOLOv8", "PyTorch", "OpenCV", "Roboflow"],
+      "category": "fullstack",
+      "index": "Project 01 / Full-Stack Web Application",
+      "title": "Student Information Management System",
+      "techStack": ["React.js", "REST APIs", "CRUD", "Authentication"],
       "tabs": {
-        "problem": "<p>Sri Lankan road networks suffer from undocumented potholes, structural cracks, and alligator cracking that cause accidents and vehicle damage. Manual inspection is slow and resource-heavy, and there is no automated tool optimized to detect distress types unique to local roads under varying tropical weather and lighting conditions.</p><p>The objective was to train and deploy a custom computer vision model capable of detecting and classifying road damage in real time from mobile or dashcam footage.</p>",
-        "process": "<p>I structured and developed the machine learning pipeline:</p><ul><li><strong>Dataset Curation & Labeling</strong>: Collected and labeled thousands of road condition images via Roboflow, categorizing distress types (potholes, alligator cracking, and longitudinal cracks).</li><li><strong>Model Training (YOLOv8)</strong>: Fine-tuned a custom YOLOv8 object detection model using PyTorch, optimizing hyper-parameters like learning rate and anchor box sizes to match local damage dimensions.</li><li><strong>Inference & Log Pipeline</strong>: Developed a real-time Python video processing pipeline using OpenCV to stream detections, output bounding boxes, and log coordinates.</li></ul>",
-        "outcome": "<p><strong>Key Insight:</strong> Tuning anchor sizes on small cracks improved detection recall by 22% compared to standard COCO weights, which frequently missed minor road cracks.</p><p><strong>Outcome:</strong> Deployed a functional python-based computer vision prototype processing feeds at 30+ FPS, outputting damage classifications alongside simulated GPS coordinate mapping tags for easy logging.</p>"
+        "problem": "<p>Educational institutions need an efficient way to manage student records, academic information, and administrative activities without manual overhead.</p>",
+        "process": "<p>I developed a web-based Student Information Management System designed to handle these administrative tasks seamlessly. The system includes secure user authentication and comprehensive CRUD operations for managing student data.</p>",
+        "outcome": "<p><strong>Outcome:</strong> Deployed a secure, centralized system that simplifies student record management and improves administrative efficiency.</p>"
       },
       "links": [
-        { "type": "github", "label": "Code Repository", "url": "https://github.com/vidubha-sankha/RoadDamage_Project" }
+        { "type": "github", "label": "Code Repository", "url": "https://github.com/vidubha-sankha/Student_Information_Management_System" }
       ]
     },
     {
       "id": 2,
-      "category": "sql",
+      "category": "fullstack",
       "index": "Project 02 / Full-Stack Web Application",
-      "title": "Home Service Management System (HSMS)",
-      "techStack": ["PHP", "MySQL", "JavaScript", "HTML/CSS", "XAMPP"],
+      "title": "Home Service Management System",
+      "techStack": ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
       "tabs": {
-        "problem": "<p>Connecting customers with home maintenance technicians is often fragmented, relying on manual calls or overly complex platforms. Admin dispatchers lacked real-time visibility into technician workloads and schedules, while older or less tech-savvy customers struggled with standard web booking interfaces.</p><p>The objective was to build a secure, end-to-end service marketplace platform serving three distinct user roles: customer, technician, and admin.</p>",
-        "process": "<p>I designed and implemented the full system architecture from scratch:</p><ul><li><strong>Database Architecture (MySQL)</strong>: Implemented a relational schema with 7 tables and proper foreign-key constraints to model the full service lifecycle—from initial booking through technician assignment to final payment and customer review.</li><li><strong>Secure Backend (PHP)</strong>: Built role-based authentication using hashed passwords and session-protected routing, using prepared statements (mysqli) throughout to robustly prevent SQL injection.</li><li><strong>Accessible Design</strong>: Developed an accessibility-conscious customer booking interface featuring large targets, clear status badges, and secure multi-extension image uploads for troubleshooting.</li></ul>",
-        "outcome": "<p><strong>Key Insight:</strong> Simplicity and visibility are crucial for user adoption. Streamlining the booking flow with photo diagnosis reduced scheduling back-and-forth by letting technicians assess issues before dispatch.</p><p><strong>Outcome:</strong> Deployed a secure, responsive prototype featuring real-time job status tracking (Pending → Assigned → In Progress → Completed) and a centralized admin dispatch dashboard prioritizing requests by urgency, significantly reducing booking-to-dispatch latency.</p>"
+        "problem": "<p>Connecting customers with home service providers often relies on fragmented manual processes or overly complex booking platforms.</p>",
+        "process": "<p>I developed a web-based system using PHP and MySQL to act as a centralized marketplace. The project involved designing the full-stack architecture, including relational database design and secure backend routing.</p>",
+        "outcome": "<p><strong>Outcome:</strong> Successfully built a full-stack application capable of connecting customers with service providers while effectively managing the underlying databases.</p>"
       },
       "links": [
         { "type": "github", "label": "Code Repository", "url": "https://github.com/vidubha-sankha/Home-Service-Management-System" }
@@ -67,98 +63,83 @@
     },
     {
       "id": 3,
-      "category": "power-bi,sql",
-      "index": "Project 03 / Business Intelligence",
-      "title": "SaaS Revenue & Cohort Performance Dashboard",
-      "techStack": ["Power BI", "SQL Server", "DAX", "ETL"],
+      "category": "ai-ml",
+      "index": "Project 03 / Computer Vision & AI",
+      "title": "AI-Based Road Damage Detection System",
+      "techStack": ["Python", "Machine Learning", "Image Processing", "AI"],
       "tabs": {
-        "problem": "<p>Executive leadership at a growing SaaS business lacked unified visibility into critical revenue metrics: rolling Monthly Recurring Revenue (MRR), Customer Acquisition Cost (CAC), and multi-month cohort retention, resulting in misaligned sales budgets.</p><p>Reporting was generated manually every week via spreadsheet merges, leading to frequent data quality errors.</p>",
-        "process": "<p>I built an automated BI architecture:</p><ul><li><strong>Data Warehouse Modeling</strong>: Designed a star-schema database model in SQL Server, unifying transactional data from Stripe, CRM histories from Salesforce, and web traffic logs.</li><li><strong>DAX Engineering</strong>: Wrote advanced DAX measures in Power BI Desktop to calculate complex moving averages, active subscriber counts, and month-over-month MRR changes.</li><li><strong>Visual Design</strong>: Created a clean interactive executive layout with robust tooltips, drill-through paths, and metric glossary cards.</li></ul>",
-        "outcome": "<p><strong>Key Insight:</strong> Discovered a 30% increase in CAC on search advertisements that yielded 40% lower retention cohorts. Conversely, developer webinars generated high LTV cohorts with low CAC.</p><p><strong>Outcome:</strong> Replaced spreadsheets with real-time reporting. Armed with these insights, the CMO reallocated <strong>$50,000 of marketing spend</strong> away from low-performing ads, reducing overall CAC by <strong>12%</strong>.</p>"
+        "problem": "<p>Road networks in Sri Lanka suffer from undocumented damage like potholes and cracks, and manual inspection is resource-heavy and slow.</p>",
+        "process": "<p>I developed a machine learning-based system to detect road damage automatically using image processing and AI techniques, trained to identify local road conditions.</p>",
+        "outcome": "<p><strong>Outcome:</strong> Demonstrated the ability to build intelligent solutions and analyze real-world problems using data, deploying a model that can identify road distress effectively.</p>"
       },
       "links": [
-        { "type": "github", "label": "Code Repository", "url": "#" },
-        { "type": "external", "label": "Live Dashboard", "url": "#" }
+        { "type": "github", "label": "Code Repository", "url": "https://github.com/vidubha-sankha/road-damage-detection" }
       ]
     }
   ],
   "skills": [
     {
-      "id": "sql",
-      "name": "SQL",
-      "filterTag": "sql",
-      "iconType": "database",
-      "items": [
-        { "label": "Query databases", "level": 95 }
-      ]
-    },
-    {
-      "id": "python",
-      "name": "Python (Pandas, NumPy)",
-      "filterTag": "python",
+      "id": "frontend",
+      "name": "Frontend Development",
+      "filterTag": "frontend",
       "iconType": "code",
       "items": [
-        { "label": "Data cleaning & analysis", "level": 90 }
+        { "label": "React.js, Vite, JavaScript, CSS", "level": 85 }
       ]
     },
     {
-      "id": "excel",
-      "name": "Excel",
-      "filterTag": "excel",
-      "iconType": "table",
+      "id": "backend",
+      "name": "Backend & APIs",
+      "filterTag": "backend",
+      "iconType": "database",
       "items": [
-        { "label": "Quick analysis, pivot tables", "level": 85 }
+        { "label": "Django, Flask, PHP, REST APIs", "level": 80 }
       ]
     },
     {
-      "id": "power-bi",
-      "name": "Power BI",
-      "filterTag": "power-bi",
+      "id": "ai-ml",
+      "name": "Machine Learning & AI",
+      "filterTag": "ai-ml",
       "iconType": "chart",
       "items": [
-        { "label": "Dashboards & visualization", "level": 85 }
+        { "label": "Python, TensorFlow, Scikit-learn", "level": 75 }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Data & Databases",
+      "filterTag": "backend",
+      "iconType": "table",
+      "items": [
+        { "label": "MySQL, Pandas, NumPy, Power BI", "level": 80 }
       ]
     }
   ],
   "certifications": [
     {
       "id": 1,
-      "title": "Google AI Essentials",
-      "issuer": "Google",
-      "year": "2025",
-      "link": "#"
-    },
-    {
-      "id": 2,
-      "title": "IBM Machine Learning Specialization",
-      "issuer": "IBM",
-      "year": "2025",
-      "link": "#"
-    },
-    {
-      "id": 3,
-      "title": "Machine Learning Specialization",
-      "issuer": "Stanford University & DeepLearning.AI",
-      "year": "2025",
+      "title": "Meta Data Analyst Specialization",
+      "issuer": "Coursera / Meta",
+      "year": "2024",
       "link": "#"
     }
   ],
   "contact": {
-    "heading": "Let's discuss your next data project",
-    "description": "I'm currently open to analytics consultations, contract roles, and full-time analyst opportunities. If you want to convert dashboards from static sheets, write optimized SQL pipelines, or query insights out of logs, drop a message."
+    "heading": "Let's discuss your next project",
+    "description": "I'm currently seeking a software engineering opportunity to apply my skills in full-stack development, database management, and AI. Drop a message to connect!"
   },
   "terminal": {
     "script": [
-      { "type": "comment", "text": "# Import analytics library" },
-      { "type": "code", "text": "import pandas as pd" },
-      { "type": "comment", "text": "# Fetch churn data via database connection" },
-      { "type": "code", "text": "df = pd.read_sql(\"SELECT clv, churn FROM customer_metrics\", db)" },
-      { "type": "comment", "text": "# Calculate segment average CLV" },
-      { "type": "code", "text": "print(df.groupby(\"churn\")[\"clv\"].mean().round(2))" }
+      { "type": "comment", "text": "# Initialize new project" },
+      { "type": "code", "text": "npm create vite@latest my-app" },
+      { "type": "comment", "text": "# Connect to database" },
+      { "type": "code", "text": "mysql -u root -p" },
+      { "type": "comment", "text": "# Train AI model" },
+      { "type": "code", "text": "model.fit(X_train, y_train, epochs=50)" }
     ],
-    "output": "\nOut[1]:\nchurn     clv_mean\n0         $3,420.50 (Active)\n1         $1,180.25 (Churned)\n    "
+    "output": "\n> Success! Created full-stack application\n> Database connection established\n> Model training complete: Accuracy 96%\n    "
   },
   "footer": {
-    "copyright": "© 2026 Vidubha Sankha — Data Analyst."
+    "copyright": "© 2026 Vidubha Sankha — Software Engineer."
   }
 }
